@@ -1,0 +1,22 @@
+.view {
+    align-items: center;
+    flex-flow: column;
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-flow: column;
+    max-width: max-content;
+    text-align: center;
+}
+
+.input {
+    margin-top: 1em;
+}
+
+.btn {
+    font-size: 120%;
+    margin-top: 1em;
+    padding: 0.4em;
+}

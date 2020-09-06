@@ -1,0 +1,60 @@
+@import "normalize.css/opinionated.css";
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    background: url('./img/bg0.png');
+    display: flex;
+    flex-flow: column;
+    font-family: 'Roboto';
+    align-items: center;
+    margin-left: calc(100vw - 100%);
+    min-height: 100vh;
+}
+
+.app {
+    background-color: #F7FFF7;
+    display: flex;
+    flex-flow: column;
+    max-width: 1024px;
+    min-height: 100vh;
+    min-width: 360px;
+    width: min(100vw, 1024px);
+}
+
+header {
+    color: #FF6B6B;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 0 2em;
+}
+
+main > div {
+    height: 100%;
+}
+
+input {
+    padding: 1em 0.5em;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 175%;
+}
+
+a {
+    text-decoration: none;
+}

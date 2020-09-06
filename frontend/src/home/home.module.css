@@ -1,0 +1,31 @@
+.new-game-form {
+    margin-top: 2em;
+}
+
+.new-game-form > * {
+    margin-top: 0.5em;
+}
+
+.player-form {
+    display: flex;
+}
+
+.remove-link {
+    margin-left: 0.5em;
+}
+
+.game-list {
+    margin-top: 2em;
+}
+
+.game-list ul {
+    list-style: number;
+}
+
+.game-list ul li {
+    padding: 0.25em;
+}
+
+.game-list ul li a {
+    display: inline-block;
+}

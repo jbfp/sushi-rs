@@ -1,0 +1,32 @@
+.nav {
+    background-color: #FF6B6B;
+    color: #F7FFF7;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    min-height: 2em;
+}
+
+.nav-section {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.nav-section > * {
+    display: block;
+    padding: 0 1em;
+}
+
+.nav-section > * + *:last-child {
+    padding-left: 0em;
+}
+
+.nav-link {
+    color: inherit;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}

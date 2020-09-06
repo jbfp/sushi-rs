@@ -1,0 +1,21 @@
+.text {
+    background: none;
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    color: #FF6B6B;
+    cursor: pointer;
+    margin: 0;
+    font-size: inherit;
+    width: auto;
+    padding: 0;
+    text-decoration: underline;
+}
+
+.text:disabled {
+    color: rgb(170, 170, 170);
+}
+
+.menu {
+    color: #F7FFF7;
+}
