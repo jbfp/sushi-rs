@@ -1,4 +1,170 @@
-.card-list {
-    list-style: none;
-    padding-left: 0;
+.hand {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.checkable-card-enter {
+    transform: translateX(1000px);
+    opacity: 0;
+}
+
+.checkable-card-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 500ms ease-in;
+}
+
+.checkable-card-exit {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.checkable-card-exit-active {
+    transform: translateX(-1000px);
+    opacity: 0;
+    transition: all 500ms ease-out;
+}
+
+.checkable-card {
+    margin-left: 0.75em;
+}
+
+.checkable-card:first-child {
+    margin-left: 0;
+}
+
+.checkable-card {
+    border-radius: 5px;
+    width: min-content;
+}
+
+.checkable-card[data-checked='true'] {
+    box-shadow: 0 0 10px 5px rgba(255,107,107, 1.0);
+}
+
+.checkable-card-input {
+    display: none;
+}
+
+.confirm {
+    margin-top: 1em;
+}
+
+.players {
+    margin-top: 1em;
+}
+
+.player {
+    border-top: 1px solid #666666;
+    display: flex;
+    flex-flow: row;
+    padding: 0.5em 0;
+}
+
+.face-up-cards {
+    display: flex;
+    flex-flow: row;
+    min-height: calc(35px + 1.4 * 87px + 0.5em);
+    padding: 0.5em;
+}
+
+.face-up-card {
+    margin-left: 1em;
+    animation: slide-in-fwd-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.face-up-card-enter {
+    transform: translateZ(-1400px);
+    opacity: 0;
+}
+
+.face-up-card-enter-active {
+    transform: translateZ(0);
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+
+.face-up-card-exit {
+    transform: translateZ(0);
+    opacity: 1;
+}
+
+.face-up-card-exit-active {
+    transform: translateZ(-1400px);
+    opacity: 0;
+    transition: all 500ms ease-out;
+}
+
+.face-up-card:first-child {
+    margin-left: 0;
+}
+
+.card {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid #666666;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    flex-flow: column;
+    padding: 0.5em;
+    height: calc(1.4 * 87px - 0.5em);
+    width: calc(87px - 0.5em);
+}
+
+.card-icon {
+    flex-grow: 1;
+}
+
+.card-text {
+    flex-grow: 0;
+}
+
+.wasabi-nigiri {
+    position: relative;
+    margin-right: 1em;
+    height: calc(1.4 * 87px - 0.5em);
+    width: calc(87px - 0.5em);
+}
+
+.wasabi-nigiri > .card[data-kind="wasabi"] {
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+
+.wasabi-nigiri > .card[data-kind="nigiri"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 30px;
+}
+
+.card[data-kind='chopsticks'] {
+    background-color: #8ebec0;
+}
+
+.card[data-kind='dumpling'] {
+    background-color: #7c92ce;
+}
+
+.card[data-kind='makiRolls'] {
+    background-color: #c33036;
+}
+
+.card[data-kind='nigiri'],
+.card[data-kind='wasabi'] {
+    background-color: #f1c33c;
+}
+
+.card[data-kind='pudding'] {
+    background-color: #dd9ba7;
+}
+
+.card[data-kind='sashimi'] {
+    background-color: #ccd82b;
+}
+
+.card[data-kind='tempura'] {
+    background-color: #c88fb8;
 }

@@ -75,14 +75,9 @@ class GameHost extends React.Component {
         this.sse.close();
     }
 
-    static der
-
     render() {
         return (
-            <>
-                {this.state.time !== null && <h2>{this.state.time}</h2>}
-                <Game {...this.props} />
-            </>
+            <Game {...this.props} countdown={this.state.time} />
         );
     }
 }
