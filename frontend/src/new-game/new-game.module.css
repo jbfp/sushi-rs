@@ -1,0 +1,11 @@
+.new-game-form > * {
+    margin-top: 0.5em;
+}
+
+.player-form {
+    display: flex;
+}
+
+.remove-link {
+    margin-left: 0.5em;
+}

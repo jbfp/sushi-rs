@@ -4,6 +4,7 @@ import { isLoggedIn } from './common/api';
 import GameView from './game/GameView';
 import HomeView from './home/HomeView';
 import LoginView from './login/LoginView';
+import NewGameView from './new-game/NewGameView';
 
 const App = () => {
     return (
@@ -15,6 +16,10 @@ const App = () => {
 
                 <AuthenticatedRoute exact path="/">
                     <HomeView />
+                </AuthenticatedRoute>
+
+                <AuthenticatedRoute path="/new-game">
+                    <NewGameView />
                 </AuthenticatedRoute>
 
                 <AuthenticatedRoute path="/play/:id">

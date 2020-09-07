@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from './home.module.css';
 
 const GameList = ({ games }) => {
     return (
-        <div className="game-list">
-            <h3>Games</h3>
-
+        <div className={styles['game-list']}>
             {games
                 ? games.length > 0 ? (
                     games.map(({ id, players }) => (
